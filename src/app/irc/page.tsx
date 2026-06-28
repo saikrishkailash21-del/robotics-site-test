@@ -231,7 +231,8 @@ export default function IRC2027Page() {
                 <section id="personnel" className="mb-16">
                     <div className="mb-12">
                         <span className="text-indigo-400 font-bold tracking-widest uppercase text-sm mb-3 block">Personnel Directory</span>
-                        <h2 className="text-3xl md:text-4xl font-black text-white tracking-tight">The Brains Behind the Machine</h2>
+                        {/* Only changing this header line */}
+                        <h2 className="text-3xl md:text-4xl font-black text-white tracking-tight">Senior Team Members</h2>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -261,6 +262,7 @@ export default function IRC2027Page() {
                                             {member.name}
                                         </h3>
 
+                                        {/* Back to original: displays exact roles from data array */}
                                         <span className={`inline-block font-semibold uppercase tracking-wider rounded-full mb-4 ${i === 0 ? "text-indigo-300 text-sm bg-indigo-900/30 px-4 py-1.5 border border-indigo-800/50" : "text-slate-400 text-xs"}`}>
                                             {member.role}
                                         </span>
