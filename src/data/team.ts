@@ -1,3 +1,8 @@
+
+const isTest = typeof window !== "undefined" && window.location.pathname.includes("/robotics-site-test");
+const pfx = isTest ? "/robotics-site-test" : "";
+
+
 export interface TeamMember {
     name: string;
     role: string;
@@ -12,7 +17,7 @@ export const faculty: TeamMember[] = [
     {
         name: "Prof. Abhilash Patel",
         role: "Faculty Advisor",
-        image: "/Team/AbhilashPatel.png",
+        image: `${pfx}/Team/AbhilashPatel.png`,
         linkedin: "https://www.linkedin.com/company/dynamics-and-control-laboratory/",
     },
 ];
@@ -21,7 +26,7 @@ export const coordinators: TeamMember[] = [
     {
         name: "Shivansh Gupta",
         role: "Coordinator",
-        image: "/Team/Shivansh.jpeg",
+        image: `${pfx}/Team/Shivansh.jpeg`,
         linkedin: "https://www.linkedin.com/in/shivansh-gupta-5a4870285",
         github: "https://github.com/Shivansh-gupta2005",
         email: "shivanshg23@iitk.ac.in",
