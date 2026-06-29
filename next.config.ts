@@ -2,8 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/robotics-site-test",
-  assetPrefix: "/robotics-site-test", // This forces Next.js to inject the prefix into assets!
+  basePath: "", 
   images: {
     unoptimized: true,
     remotePatterns: [
